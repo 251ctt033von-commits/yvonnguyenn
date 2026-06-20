@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYU Student Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        <img src="pic2.webp" alt="">
+        <div>
+            <h2>PYU</h2>
+            <p>UNIVERSITY</p>
+        </div>
+    </div>
+
+    <ul>
+        <li class="active"><i class="fa-solid fa-house"></i> Dashboard</li>
+        <li><i class="fa-solid fa-users"></i> Sinh viên</li>
+        <li><i class="fa-solid fa-book"></i> Lớp học</li>
+        <li><i class="fa-solid fa-clipboard-check"></i> Điểm danh</li>
+        <li><i class="fa-solid fa-chart-line"></i> Báo cáo</li>
+        <li><i class="fa-solid fa-gear"></i> Cài đặt</li>
+    </ul>
+
+    <div class="logout">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        Đăng xuất
+    </div>
+
+</div>
+
+<div class="main">
+
+    <header>
+        <h2>Student Dashboard</h2>
+
+        <div class="admin">
+            <img src="pic1.avif" alt="">
+            <div>
+                <b>Admin</b>
+                <p>Quản trị viên</p>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="section-title">Tổng quan</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon blue">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <div>
+                <h4>Tổng sinh viên</h4>
+                <span>1.200</span>
+                <p>↑ 12% so với tháng trước</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon green-bg">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div>
+                <h4>Lớp học</h4>
+                <span>48</span>
+                <p>↑ 5% so với tháng trước</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon purple">
+                <i class="fa-solid fa-percent"></i>
+            </div>
+            <div>
+                <h4>Tỷ lệ chuyên cần</h4>
+                <span>92.5%</span>
+                <p>↑ 3% so với tháng trước</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon orange">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div>
+                <h4>Giảng viên</h4>
+                <span>64</span>
+                <p>↑ 8% so với tháng trước</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="table-box">
+
+        <div class="table-header">
+            <h3>Danh sách sinh viên</h3>
+
+            <div class="actions">
+                <input type="text" placeholder="Tìm kiếm sinh viên...">
+                <button>Lọc</button>
+                <button class="add">+ Thêm sinh viên</button>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>MSSV</th>
+                <th>Họ và tên</th>
+                <th>Lớp</th>
+                <th>Email</th>
+                <th>Điểm TB</th>
+                <th>Chuyên cần</th>
+                <th>Hành động</th>
+            </tr>
+
+            <tr><td><input type="checkbox"></td><td>SV001</td><td>Nguyễn Văn A</td><td>CNTT1</td><td>nguyenvana@example.com</td><td>8.5</td><td class="green">95%</td><td>⋯</td></tr>
+            <tr><td><input type="checkbox"></td><td>SV002</td><td>Trần Thị B</td><td>CNTT1</td><td>tranthib@example.com</td><td>7.8</td><td class="green">92%</td><td>⋯</td></tr>
+            <tr><td><input type="checkbox"></td><td>SV003</td><td>Lê Văn C</td><td>CNTT2</td><td>levanc@example.com</td><td>8.2</td><td class="green">90%</td><td>⋯</td></tr>
+            <tr><td><input type="checkbox"></td><td>SV004</td><td>Phạm Thị D</td><td>CNTT2</td><td>phamthid@example.com</td><td>7.5</td><td class="green">88%</td><td>⋯</td></tr>
+            <tr><td><input type="checkbox"></td><td>SV005</td><td>Hoàng Văn E</td><td>CNTT3</td><td>hoangvane@example.com</td><td>8.9</td><td class="green">96%</td><td>⋯</td></tr>
+            <tr><td><input type="checkbox"></td><td>SV006</td><td>Đỗ Thị F</td><td>CNTT3</td><td>dothif@example.com</td><td>7.1</td><td class="green">85%</td><td>⋯</td></tr>
+            <tr><td><input type="checkbox"></td><td>SV007</td><td>Vũ Văn G</td><td>CNTT1</td><td>vuvang@example.com</td><td>8.0</td><td class="green">93%</td><td>⋯</td></tr>
+            <tr><td><input type="checkbox"></td><td>SV008</td><td>Bùi Thị H</td><td>CNTT2</td><td>buithih@example.com</td><td>7.6</td><td class="green">89%</td><td>⋯</td></tr>
+            <tr><td><input type="checkbox"></td><td>SV009</td><td>Ngô Văn I</td><td>CNTT3</td><td>ngovani@example.com</td><td>8.3</td><td class="green">94%</td><td>⋯</td></tr>
+            <tr><td><input type="checkbox"></td><td>SV010</td><td>Dương Thị K</td><td>CNTT1</td><td>duongthik@example.com</td><td>7.9</td><td class="green">91%</td><td>⋯</td></tr>
+        </table>
+
+    </div>
+
+    <footer>
+        © 2024 PYU University. All rights reserved.
+    </footer>
+
+</div>
+
+</body>
+</html>
